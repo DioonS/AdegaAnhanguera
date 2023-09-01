@@ -1,0 +1,27 @@
+<div class="container-cards">
+    <div *ngFor="let card of cards" class="card-container agua-container">
+        <!--<a href="/" class="hero-image-container">-->
+            <img class="hero-image" src="{{ card.image }}" alt="Lindoya Água Mineral Natural Sem Gás"/>
+        <!--</a>-->
+        <main class="main-content">
+            <h3 style="text-align: center;">{{ card.product }}</h3>
+            <p style="text-align: center;">{{ card.description }}</p>
+            <div class="flex-row">
+            <div class="coin-base">
+                <img src="../../assets/cifrão.png" alt="Cifrão" class="small-image"/>
+                <h4>R$ {{ card.price }} </h4>
+            </div>
+            <div class="time-left">
+                <img src="../../assets/bottle.png" alt="Bebida" class="small-image"/>
+                <p>{{ card.contentType }}</p>
+            </div>
+        </div>
+        </main>
+        <div class="card-attribute">
+            <a href="http://api.whatsapp.com/send?phone=5511932500783" target="_blank">
+                <img src="../../assets/whatsapp.png" alt="Whatsapp" class="small-avatar"/>
+            </a>
+            <p>Faça seu pedido <span><a href="http://api.whatsapp.com/send?phone=5511932500783" target="_blank" target="_blank">Aqui</a></span></p>
+        </div>
+    </div>
+</div>

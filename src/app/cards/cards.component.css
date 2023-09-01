@@ -1,0 +1,153 @@
+/**********************************/
+/* 1. Container Cards
+/* 2. Components Card
+/* 3. Small Images
+/* 4. Responsive Cards
+/* 5. Card Size
+/**********************************/
+
+/**********************************/
+/* 1. Container Cards
+/**********************************/
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.card-container {
+    width: calc(33.33% - 1rem);
+    margin-bottom: 1rem;
+
+    min-width: 270px;
+    max-width: 270px;
+    margin: .8em auto;
+    background-color: #3b3838;
+    border-radius: 15px;
+    padding: 2rem;
+    height: auto;
+
+    color: #fff;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 0 0 1px #D19B3E, 0 0 0 2px #FCD926;
+}
+
+/**********************************/
+/* 2. Components Card
+/**********************************/
+
+div.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.coin-base, .time-left, .card-attribute {
+    display: flex;
+    align-items: center;
+    padding: .8em 0;
+}
+
+.card-attribute {
+    padding-bottom: 1.5em;
+    border-top: 2px solid #D19B3E;
+}
+
+.card-attribute p {
+    margin-top: -.3rem;
+    color: #fff;
+}
+
+.main-content h3{
+    margin-top: .8rem;
+    margin-bottom: .9rem;
+    font-size: 25px;
+    font-family: 'Quicksand';
+}
+
+.main-content p {
+    margin-bottom: 0.9em;
+    font-size: 13px;
+}
+
+.coin-base img {
+    margin-top: -.5rem;
+}
+
+.time-left {
+    margin-top: -1rem;
+}
+
+.coin-base h4 {
+    font-size: 15px;
+    font-family: 'Quicksand';
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.time-left p {
+    font-size: 10px;
+    margin-top: .7rem;
+}
+
+.card-attribute {
+    margin-top: -1em;
+}
+
+.hero-image {
+    width: 205px;
+    border-radius: 10px;
+}
+
+.card-attribute img{
+    width: 28px;
+}
+
+.card-attribute p {
+    margin-top: .5rem;
+    font-size: 12px;
+}
+
+.card-attribute a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #FCD926;
+}
+
+/**********************************/
+/* 3. Small Images 
+/**********************************/
+
+.small-image {
+    width: 1.2em;
+    margin-right: .5em;
+}
+
+.small-avatar {
+    min-width: 40px;
+    border-radius: 200px;
+    margin: 5px;
+    margin-top: -.2rem;
+}
+
+/**********************************/
+/* 4. Responsive Cards
+/**********************************/
+
+@media (min-width:600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:400px) {
+    img.eye {
+    max-width: 3em;
+    }
+}

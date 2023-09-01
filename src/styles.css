@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    scroll-behavior: smooth;
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(assets/drinks.jpg) center center no-repeat fixed;
+    background-size: cover;
+    opacity: 0.85;
+    z-index: -1;
+}
