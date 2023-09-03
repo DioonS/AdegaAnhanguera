@@ -15,9 +15,11 @@ import { GelosComponent } from './gelos/gelos.component';
 import { VinhosComponent } from './vinhos/vinhos.component';
 import { DestiladosComponent } from './destilados/destilados.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CervejaButtonsComponent } from './cerveja-buttons/cerveja-buttons.component';
 import { LatasComponent } from './latas/latas.component';
-import { CervejasComponent } from './cervejas/cervejas.component';
+import { RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 @NgModule({
   declarations: [
@@ -31,17 +33,19 @@ import { CervejasComponent } from './cervejas/cervejas.component';
     VinhosComponent,
     DestiladosComponent,
     NavbarComponent,
-    CervejaButtonsComponent,
     LatasComponent,
-    CervejasComponent
-  ],
+    PageNotFoundComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     TooltipModule.forRoot(),
-    FormsModule
-  ],
+    FormsModule,
+    RouterModule,
+    NgxSpinnerModule,
+    InfiniteScrollModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

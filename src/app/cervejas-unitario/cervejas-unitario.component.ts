@@ -11,7 +11,7 @@ export class CervejasUnitarioComponent {
   cervejas: any[] | undefined;
 
   constructor(private cardsService: CardsService) {
-    this.cervejas = this.cardsService.getCards().filter(card => card.category === 'cervejas_unitario');
+    //this.cervejas = this.cardsService.getCards().filter(card => card.category === 'cervejas_unitario');
   }
 
 }
