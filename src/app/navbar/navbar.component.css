@@ -1,34 +1,52 @@
-.container-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    margin-left: 18rem;
-}
-
-.bar-search {
-    width: 500px;
-    border-radius: 8px 0px 0px 8px;
+.navigation {
+    width: 100%;
+    max-height: 70px;
+    background-color: #1e1e1e;
     display: flex;
     align-items: center;
-}
-
-.button-search {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #FCD926;
-    background: #FCD926;
+    justify-content: center;
     text-align: center;
-    color: #fff;
-    border-radius: 0 8px 8px 0;
-    font-size: 18px;
-    cursor: pointer;
-    margin-right: 20rem;
+    box-shadow: 0 0 0 1px #FCD926, 0 0 0 2px #D19B3E;
+    margin-bottom: 2rem;
 }
 
-.button-search:hover {
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbtn {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Quicksand';
+}
+
+.menu-navigation {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.menu-navigation img {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+}
+
+.dropdown-button:hover .navbtn {
     background-color: #FCD926;
-    border: #FCD926 1px solid;
+    color: #000;
+    border-radius: 8px;
+}
+
+
+.menu-navigation:hover .navbtn {
+    background-color: #FCD926;
+    color: #000;
+    border-radius: 8px;
 }

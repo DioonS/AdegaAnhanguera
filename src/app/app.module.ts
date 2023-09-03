@@ -8,26 +8,32 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { CardsComponent } from './cards/cards.component';
 import { CervejasUnitarioComponent } from './cervejas-unitario/cervejas-unitario.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { CategoryButtonsComponent } from './category-buttons/category-buttons.component';
+import { TopbarComponent } from './topbar/topbar.component';
 import { NaoAcoolicosComponent } from './nao-acoolicos/nao-acoolicos.component';
 import { FooterComponent } from './footer/footer.component';
 import { GelosComponent } from './gelos/gelos.component';
 import { VinhosComponent } from './vinhos/vinhos.component';
 import { DestiladosComponent } from './destilados/destilados.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { CervejaButtonsComponent } from './cerveja-buttons/cerveja-buttons.component';
+import { LatasComponent } from './latas/latas.component';
+import { CervejasComponent } from './cervejas/cervejas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardsComponent,
     CervejasUnitarioComponent,
-    NavbarComponent,
-    CategoryButtonsComponent,
+    TopbarComponent,
     NaoAcoolicosComponent,
     FooterComponent,
     GelosComponent,
     VinhosComponent,
-    DestiladosComponent
+    DestiladosComponent,
+    NavbarComponent,
+    CervejaButtonsComponent,
+    LatasComponent,
+    CervejasComponent
   ],
   imports: [
     BrowserModule,
