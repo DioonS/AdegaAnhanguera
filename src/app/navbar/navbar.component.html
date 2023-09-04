@@ -14,4 +14,7 @@
     <div class="menu-navigation">
         <button class="navbtn" routerLink="/destilados"><a>Destilados</a></button>
     </div>
-</nav> <!-- .navigation -->
+</nav>
+
+<app-cerveja-buttons *ngIf="selectedCategory === 'cervejas'"></app-cerveja-buttons>
+<app-gelos-buttons></app-gelos-buttons>

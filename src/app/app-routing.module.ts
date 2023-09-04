@@ -8,7 +8,14 @@ import { CervejasComponent } from './cervejas/cervejas.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: 'cervejas', component: CervejasComponent },
+  { path: 'cervejas', component: CervejasComponent, // children : [
+    //{ path 'latas', component: LatasComponent },
+    //{ path 'long-neck', component: LongNeckComponent },
+    //{ path 'packs', component: PacksComponent },
+    //{ path 'retornaveis', component: RetornaveisComponent },
+    //{ path 'garrafas', component: GarrafasComponent }
+  //] 
+},
   { path: 'nao-alcoolicos', component: NaoAcoolicosComponent},
   { path: 'destilados', component: DestiladosComponent},
   { path: 'vinhos', component: VinhosComponent},

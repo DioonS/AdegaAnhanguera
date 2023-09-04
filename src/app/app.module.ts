@@ -20,6 +20,12 @@ import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { CervejaButtonsComponent } from './cerveja-buttons/cerveja-buttons.component';
+import { GelosButtonsComponent } from './gelos-buttons/gelos-buttons.component';
+import { LongNeckComponent } from './long-neck/long-neck.component';
+import { PacksComponent } from './packs/packs.component';
+import { GarrafasComponent } from './garrafas/garrafas.component';
+import { RetornaveisComponent } from './retornaveis/retornaveis.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +40,13 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
     DestiladosComponent,
     NavbarComponent,
     LatasComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CervejaButtonsComponent,
+    GelosButtonsComponent,
+    LongNeckComponent,
+    PacksComponent,
+    GarrafasComponent,
+    RetornaveisComponent
     ],
   imports: [
     BrowserModule,
