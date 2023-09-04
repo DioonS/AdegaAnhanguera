@@ -1,13 +1,12 @@
 <div class="search-results"
     infinite-scroll
     [infiniteScrollDistance]="2"
-    [infiniteScrollThrottle]="50"
-    (scrolled)="onScrollDown()">
+    [infiniteScrollThrottle]="500"
+    (scrolled)="onScroll()"
+    [scrollWindow]="false">
     <div class="container-cards">
         <div *ngFor="let card of cards" class="card-container agua-container">
-            <!--<a href="/" class="hero-image-container">-->
-                <img class="hero-image" src="{{ card.image }}" alt="Lindoya Água Mineral Natural Sem Gás"/>
-            <!--</a>-->
+            <img class="hero-image" src="{{ card.image }}" alt="Lindoya Água Mineral Natural Sem Gás"/>
             <main class="main-content">
                 <h3 style="text-align: center;">{{ card.product }}</h3>
                 <p style="text-align: center;">{{ card.description }}</p>

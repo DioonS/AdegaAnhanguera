@@ -154,6 +154,7 @@ div.coin-base, .time-left, .card-attribute {
 
 #link-topo {
     position: fixed;
+    z-index: 1;
     right: 3rem;
     bottom: 3rem;
     width: 3rem;
