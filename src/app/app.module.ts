@@ -11,7 +11,6 @@ import { CervejasUnitarioComponent } from './cervejas-unitario/cervejas-unitario
 import { TopbarComponent } from './topbar/topbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LatasComponent } from './latas/latas.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
@@ -46,7 +45,6 @@ import { DestiladosModule } from './destilados/destilados.module';
     TopbarComponent,
     FooterComponent,
     NavbarComponent,
-    LatasComponent,
     PageNotFoundComponent,
     LongNeckComponent,
     PacksComponent,

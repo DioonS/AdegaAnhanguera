@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { NaoAlcoolicosComponent } from './nao-alcoolicos.component';
 import { RefrigerantesComponent } from '../refrigerantes/refrigerantes.component';
 import { SucosComponent } from '../sucos/sucos.component';
 import { AguaComponent } from '../agua/agua.component';
 import { EnergeticosComponent } from '../energeticos/energeticos.component';
 
-const nonAlcoholicRoutes: Routes = [
+const nonAlcoholicsRoutes: Routes = [
     {
         path: '', component: NaoAlcoolicosComponent, children: [
             { path: 'refrigerantes', component: RefrigerantesComponent },
@@ -20,7 +19,7 @@ const nonAlcoholicRoutes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forChild(nonAlcoholicRoutes)],
+    imports: [RouterModule.forChild(nonAlcoholicsRoutes)],
     exports: [RouterModule],
 })
 export class NaoAlcoolicosRoutingModule {}

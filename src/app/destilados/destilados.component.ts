@@ -13,7 +13,7 @@ export class DestiladosComponent implements OnInit {
   constructor(private route: ActivatedRoute) {  }
 
   ngOnInit(): void {
-    this.route.url.subscribe(urlSegments =>{
+    this.route.url.subscribe(urlSegments => {
       this.isDestiladosRouteActive = urlSegments.join('/') === 'destilados';
     });
   }

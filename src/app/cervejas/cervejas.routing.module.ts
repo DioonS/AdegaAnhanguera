@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { CervejasComponent } from './cervejas.component';
 import { LatasComponent } from '../latas/latas.component';
 import { LongNeckComponent } from '../long-neck/long-neck.component';

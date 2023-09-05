@@ -10,7 +10,7 @@ export class NaoAlcoolicosComponent implements OnInit {
 
   isNonAlcoolicosRouteActive: boolean = false;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.route.url.subscribe(urlSegments => {
